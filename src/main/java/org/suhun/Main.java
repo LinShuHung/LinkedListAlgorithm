@@ -12,5 +12,7 @@ public class Main {
         linkedListImplement.add(6);
         linkedListImplement.printLinkedList();
         linkedListImplement.search(6);
+        linkedListImplement.delete(10);
+        linkedListImplement.printLinkedList();
     }
 }

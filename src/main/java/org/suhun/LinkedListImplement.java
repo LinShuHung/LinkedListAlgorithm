@@ -43,6 +43,36 @@ public class LinkedListImplement {
         }
     }
 
+    public void delete(int value){
+        if(start == null){
+            System.out.println("No node to delete!!!");
+        }else{
+            Node node = start;
+            Node preNode = null;
+            Node targetNode = null;
+
+            while(true){
+                if(node == null) break;
+
+                if(node.val == value){
+                    targetNode = node;
+                    break;
+                }else{
+                    preNode = node;
+                    node = node.next;
+                }
+            }
+
+            if(targetNode != null){
+                if(targetNode == start){
+                    start = start.next;
+                }else{
+                    preNode.next = targetNode.next;
+                }
+            }
+        }
+    }
+
     public void printLinkedList(){
         if(start == null){
             System.out.println("No node to print!!!!");
