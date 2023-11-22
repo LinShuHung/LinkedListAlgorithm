@@ -11,5 +11,6 @@ public class Main {
         linkedListImplement.add(8);
         linkedListImplement.add(6);
         linkedListImplement.printLinkedList();
+        linkedListImplement.search(6);
     }
 }

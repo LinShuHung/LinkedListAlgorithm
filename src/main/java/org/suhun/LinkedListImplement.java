@@ -23,6 +23,26 @@ public class LinkedListImplement {
         }
     }
 
+    public void search(int value){
+        int count = 1;
+        if(start == null){
+            System.out.println("No node to search!!!!");
+        }else{
+            Node node = start;
+            while(true){
+                if(node == null) break;
+                if(node.val == value){
+                    System.out.println("The value "+ value + " is in it!Total find "+ count+" times!!!");
+                    break;
+                }else{
+                    node = node.next;
+                }
+                count++;
+            }
+            System.out.println("-----No Result! Total find " + count + " times----");
+        }
+    }
+
     public void printLinkedList(){
         if(start == null){
             System.out.println("No node to print!!!!");
@@ -35,4 +55,5 @@ public class LinkedListImplement {
             }
         }
     }
+
 }
